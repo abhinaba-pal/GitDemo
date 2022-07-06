@@ -19,25 +19,25 @@ print(len(checkboxes))
 # driver.find_element_by_id("checkBoxOption2").click()
 
 # 2. For looping through the check boxes dynamically and selecting it
-for i in checkboxes:
+#for i in checkboxes:
 
     # Extracting the required attribute
-    if i.get_attribute('value') == 'option2':
-        i.click()
+    #if i.get_attribute('value') == 'option2':
+        #i.click()
 
         # Checking the condition inside the loop so, validation should be done inside the loop only
-        assert i.is_selected()
+        #assert i.is_selected()
 
 
 # Radio buttons and check boxes are handled in the same way
 # NOTE: Radio button is static, i.e., only one option can be selected at a time so iterables/loops doesn't work here
 # Radio button is validated in basic way
-#radiobutton = driver.find_elements_by_xpath("//input[@name='radioButton']")
+radiobutton = driver.find_elements_by_xpath("//input[@name='radioButton']")
 
 # It is a list object, so we can directly select via., index position
-#radiobutton[1].click()
+radiobutton[1].click()
 
-#assert radiobutton[1].is_selected()
+assert radiobutton[1].is_selected()
 
 
 # To check if the selection was successfully happened or not. How do you validate?
