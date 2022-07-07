@@ -32,12 +32,12 @@ for i in checkboxes:
 # Radio buttons and check boxes are handled in the same way
 # NOTE: Radio button is static, i.e., only one option can be selected at a time so iterables/loops doesn't work here
 # Radio button is validated in basic way
-radiobutton = driver.find_elements_by_xpath("//input[@name='radioButton']")
+#radiobutton = driver.find_elements_by_xpath("//input[@name='radioButton']")
 
 # It is a list object, so we can directly select via., index position
-radiobutton[1].click()
+#radiobutton[1].click()
 
-assert radiobutton[1].is_selected()
+#assert radiobutton[1].is_selected()
 
 
 # To check if the selection was successfully happened or not. How do you validate?
